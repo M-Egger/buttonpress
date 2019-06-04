@@ -10,12 +10,12 @@ buttonpress::buttonpress(QWidget *parent) :
     pinMode(button0, INPUT);
     pinMode(button1, INPUT);
     pinMode(button2, INPUT);
-
+    timeptr=new QTimer(this);
     connect(timeptr, SIGNAL(timeout()),SLOT(readbutton));
     timeptr->start(100);
 }
 
-void readbutton(){
+void buttonpress::readbutton(){
     bool b0=digitalRead(button0);
     bool b1= digitalRead(button1);
     bool b2= digitalRead(button2);
