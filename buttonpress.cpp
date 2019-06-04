@@ -23,17 +23,17 @@ void readbutton(){
 
 
     if(b0 == true)
-        kasten1->setStyleSheet("background-color: red");
+        kasten1->setStyleSheet("background-color: red;");
     else
-        kasten1->setStyleSheet("background-color: black");
+        kasten1->setStyleSheet("background-color: black;");
 
     if (b1 == true)
-        kasten2->setStyleSheet("background-color: red");
+        kasten2->setStyleSheet("background-color: red;");
     else
-        kasten2->setStyleSheet("background-color: black");
+        kasten2->setStyleSheet("background-color: black;");
 
     if (b2==  true)
-        kasten3->setStyleSheet("background-color: red");
+        kasten3->setStyleSheet("background-color: red;");
     else
-        kasten3->setStyleSheet("background-color: black");
+        kasten3->setStyleSheet("background-color: black;");
 }
